@@ -2,7 +2,7 @@ import time
 
 # ============================================================
 #   TURBO INTRUDER PoC - RATE LIMIT + RESPONSE DIFFERENTIATION
-#   Target  : LiveNation Change Password
+#   Target  : spy0x1 Change Password
 #   Field   : currentPassword  (matched by %s in the upper pane)
 # ============================================================
 
