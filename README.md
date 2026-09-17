@@ -17,3 +17,9 @@ evidence that valid and invalid inputs return different responses.
 Keeps sending filler (wrong) passwords until a 60-second window closes.
 The valid password is **never** re-sent, so the "valid" count stays at
 exactly 1 while the request rate is sustained.
+
+## Author
+
+## Author
+
+[![X](https://img.shields.io/badge/X-spy0x1-black?style=for-the-badge&logo=x&logoColor=white)](https://x.com/spy0x1)
