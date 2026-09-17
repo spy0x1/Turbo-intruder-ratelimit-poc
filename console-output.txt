@@ -1,0 +1,30 @@
+Reqs: 1112 | Queued: 0 | Duration: 68 | RPS: 16 | Connections: 2224 | Retries: 0 | Fails: 1 | Next: null | Completed
+
+==================================================================
+  PROOF OF CONCEPT — FINAL REPORT
+==================================================================
+  Injection point     : currentPassword (JSON body, %s)
+  Concurrency         : 15 connections
+
+------------------------------------------------------------------
+  Q1. DIFFERENTIATE VALID vs. INVALID RESPONSES
+------------------------------------------------------------------
+  Valid responses     : 1
+  Invalid responses   : 1111
+  ✅ VALID password identified at index 306
+     → Status: 204 No Content
+  ✅ All other payloads returned HTTP 400 {"code":"InvalidPassword"}
+  ✅ Status code alone reliably differentiates valid vs. invalid
+
+------------------------------------------------------------------
+  Q2. PRODUCE AT LEAST 300 REQUESTS PER MINUTE
+------------------------------------------------------------------
+  [ View B ] — Sustained 60-second window (rate proof)
+    Requests sent      : 1112
+    Elapsed time       : 68.00 seconds
+    Sustained rate     : 1112 requests / 68.00 s × 60 = 981 req/min
+
+  Requests per minute : 981
+  ✅ RATE REQUIREMENT MET: 981 req/min ≥ 300 req/min
+  ✅ NO RATE LIMITING DETECTED: 0 x HTTP 429 responses
+==================================================================
