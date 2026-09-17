@@ -22,4 +22,4 @@ exactly 1 while the request rate is sustained.
 
 ## Author
 
-[![X](https://img.shields.io/badge/X-spy0x1-black?style=for-the-badge&logo=x&logoColor=white)](https://x.com/spy0x1)
+[![Follow spy0x1 on X](https://img.shields.io/badge/FOLLOW%20ME-spy0x1-blue?style=for-the-badge&logo=x&logoColor=white)](https://x.com/spy0x1)
